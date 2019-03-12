@@ -1,0 +1,123 @@
+Terminal commands:
+==================
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Administrator\Desktop\11032019> node index.js
+app started
+app finished
+PS C:\Users\Administrator\Desktop\11032019> node index.js --inspect-brk
+app started
+app finished
+PS C:\Users\Administrator\Desktop\11032019> node --inspect-brk index.js
+Debugger listening on ws://127.0.0.1:9229/6d3da4b5-d839-44aa-a191-acdd93a2de3f
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+app started
+app finished
+Waiting for the debugger to disconnect...
+PS C:\Users\Administrator\Desktop\11032019> npm install nodemon -g
+C:\Users\Administrator\AppData\Roaming\npm\nodemon -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\nodemon\bin\nodemon.js
+
+> nodemon@1.18.10 postinstall C:\Users\Administrator\AppData\Roaming\npm\node_modules\nodemon
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\nodemon\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ nodemon@1.18.10
+added 223 packages from 129 contributors in 29.765s
+PS C:\Users\Administrator\Desktop\11032019> nodemon index.js
+[nodemon] 1.18.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node index.js`
+app started
+app finished
+[nodemon] clean exit - waiting for changes before restart
+rs
+[nodemon] starting `node index.js`
+app started
+app finished
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+app started
+app finished
+'Hi
+[nodemon] starting `node index.js`
+app started
+app finished
+'Hi
+[nodemon] clean exit - waiting for changes before restart
+====
+
+After adding timer:
+
+nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+app started
+app finished
+timer1: 28.852ms
+[nodemon] starting `node index.js`
+app started
+app finished
+timer1: 4.035ms
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app started
+app finished
+timer1: 3.745ms
+[nodemon] clean exit - waiting for changes before restart
+rs
+[nodemon] starting `node index.js`
+app started
+app finished
+timer1: 3.741ms
+[nodemon] clean exit - waiting for changes before restart
+^Z
+^CTerminate batch job (Y/N)?
+Terminate batch job (Y/N)? y
+PS C:\Users\Administrator\Desktop\11032019> nodemon test1.js
+[nodemon] 1.18.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node test1.js`
+App startes
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+App ends
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node test1.js`
+App startes
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+App ends
+App ends 1
+[nodemon] clean exit - waiting for changes before restart
